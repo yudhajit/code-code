@@ -11,6 +11,26 @@ k = i+j;
 return k;
 }
 
+int sub(int i,int j)
+{
+int k;
+k = i-j;
+return k;
+}
+
+int mul(int i,int j)
+{
+int k;
+k = i*j;
+return k;
+}
+int dev(int i,int j)
+{
+int k;
+k = i/j;
+return k;
+}
+
 int main(){
 int i;
 int ans = 0;
