@@ -32,15 +32,16 @@ return k;
 }
 
 int main(){
-int i;
+int i,x,y;
 int ans = 0;
 for(i=0;i++;i<5){
 ans = i+1;
-printf("the answer is %d", ans);
+printf("the dattasum is %d\n\n", ans);
 }
 print("Enter two numbers consecutively")
-scanf( 
+scanf( "%d%d", &x,&y);
 num = add( x, y)
+printf("the patelsum is %d\n\n", ans);
 return 0;
 }
 
