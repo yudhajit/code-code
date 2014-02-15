@@ -32,21 +32,73 @@ return k;
 }
 
 int main(){
+//Initialization
 int i,x,y,num,n;
+char ch;
 int ans = 0;
-printf("Enter an integer number");
-scanf("%d",&n);
-printf("the array of all integers upto %d is the datta_array", n);
-for(i=0;i<n;i++){
-	printf("the datta_array element number %d is %d\n", i,i);
+
+//What Operation is to be Performed
+printf("Which operation do you want to perform?");
+printf("Enter :\n		'a' for addition\n	's' for subtraction\n	'm' for multiplication\n	'd' for division\n\n");
+scanf("%c", ch);
+
+switch(ch){
+	case 'a':
+        //Adding two numbers
+		printf("Enter two numbers consecutively");
+		scanf( "%d%d", &x,&y);
+		num = add( x, y);
+		printf("the sum is %d\n\n", num);
+        break;
+    case 's' :
+        //Subtracting two numbers
+		printf("Enter two numbers consecutively");
+		scanf( "%d%d", &x,&y);
+		num =sub( x, y);
+		printf("the difference is %d\n\n", num);
+        break;
+    case 'm' :
+        //Multiplying two numbers
+		printf("Enter two numbers consecutively");
+		scanf( "%d%d", &x,&y);
+		num = mul( x, y);
+		printf("the product is %d\n\n", num);
+        break;
+    case 'd' :
+        //Dividing two numbers
+		printf("Enter two numbers consecutively");
+		scanf( "%d%d", &x,&y);
+		num = dev( x, y);
+		printf("the quotient is %d\n\n", num);
+        break;
+        
 }
 
-#Inputting arguments for adding
+
+
+
+//Adding two numbers
 printf("Enter two numbers consecutively");
 scanf( "%d%d", &x,&y);
 num = add( x, y);
-printf("the patelsum is %d\n\n", num);
+printf("the sum is %d\n\n", num);
 
+//Subtracting two numbers
+printf("Enter two numbers consecutively");
+scanf( "%d%d", &x,&y);
+num =sub( x, y);
+printf("the difference is %d\n\n", num);
 
+//Multiplying two numbers
+printf("Enter two numbers consecutively");
+scanf( "%d%d", &x,&y);
+num = mul( x, y);
+printf("the product is %d\n\n", num);
+
+//Dividing two numbers
+printf("Enter two numbers consecutively");
+scanf( "%d%d", &x,&y);
+num = dev( x, y);
+printf("the quotient is %d\n\n", num);
 return 0;
 }
